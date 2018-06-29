@@ -54,6 +54,7 @@ header, footer, section {
      background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
     width: 100%;
+    z-index: 1000;
     
     
 }
@@ -86,7 +87,6 @@ header, footer, section {
 background-image: url("banner-img.png");
     height: 700px;
     width: 100%;
-    z-index: 50;
     background-size: cover;
     background-position: center; 
     
@@ -142,30 +142,59 @@ background-image: url("banner-img.png");
 .grid-container .grid-item:nth-child(1){
     background-color: #a2c73c;
 }
+.grid-container .grid-item:nth-child(1) .discover{
+position: relative;
+top: 10px;
+}
 .grid-container .grid-item:nth-child(2){
     background-image: url(Amanora_JOD_projects_Neo.jpg);
 }
+
 .grid-container .grid-item:nth-child(3){
     background-color: #075daa;
+
+}
+
+.grid-container .grid-item:nth-child(3) .discover{
+    position: relative;
+    top: 60px;
 
 }
 .grid-container .grid-item:nth-child(4){
     background-image: url(Amanora_JOD_projects_Adreno.jpg);
 }
-.grid-container .grid-item:nth-child(5){
-    
+.grid-container .grid-item:nth-child(5) img {
+    position: relative;
+    top: 70px;
 }
+.grid-container .grid-item:nth-child(5) p{
+    position: relative;
+    top: 70px;
+    font-weight: bold;
+}
+
+
+
 .grid-container .grid-item:nth-child(6){
     background-image: url(Amanora_JOD_projects_gateway.jpg);
 }
 .grid-container .grid-item:nth-child(7){
     background-color: #4494d1;
 }
+.grid-container .grid-item:nth-child(7) .discover{
+position: relative;
+    top: 110px;
+}
+
 .grid-container .grid-item:nth-child(8){
     background-image: url(NEO-Gallery-Image-3-new.jpg);
 }
 .grid-container .grid-item:nth-child(9){
     background-color: #0eb049;
+}
+.grid-container .grid-item:nth-child(9) .discover{
+ position: relative;
+    top: 20px;
 }
 
 .gridhead{
@@ -183,9 +212,9 @@ background-image: url("banner-img.png");
     font-weight: 300;
 }
 .discover{
-    position: relative;
+
     font-weight: bold;
-    border: 0;
+    
 }
 
 
@@ -200,7 +229,7 @@ background-image: url("banner-img.png");
 .well #welltitle {
     font-size: 36px;
     position: relative;
-    top:125px;
+    top:90px;
     
     color: white;
    
@@ -210,11 +239,10 @@ background-image: url("banner-img.png");
     
     position: relative;
     top:125px;
- 
-    text-align: center;
     font-size: 18px;
     color: white;
-    word-break: break-all;
+    font font-weight: bold;
+
 }
 
 
@@ -227,6 +255,7 @@ background-image: url("banner-img.png");
     top: 150px;
      height: 65px;
     width: 560px;
+    font-size: 35px;
   
 }
 .grid1{
@@ -245,24 +274,8 @@ text-align: center;
         display: inline-block;
 
 }
-.grid-container1 .grid-item1:nth-child(1)
-{
-    
-}
-
-.grid-container1 .grid-item1:nth-child(2)
-{
-}
-.grid-container1 .grid-item1:nth-child(3)
-{
-  
-}
 
 
-.grid-container2 {
-   
-
-}
 .grid-item2 {
     display: inline-block;    
     border: 1px solid white;
@@ -279,8 +292,12 @@ text-align: center;
 background-color: white;
     border-color: #a2c73c;
     color: #0072bc;
+    font-size: 18px;
 }
 
+.grid1 button:hover{
+    background-color: #7fa810;
+}
 footer{
     background-color: #0f151a;
     width: 100%;
