@@ -142,7 +142,7 @@ background-image: url("banner-img.png");
 .grid-container .grid-item:nth-child(1){
     background-color: #a2c73c;
     position: relative;
-}
+}-
 .grid-container .grid-item:nth-child(1) ::after{
     content: "";
     position: absolute;
