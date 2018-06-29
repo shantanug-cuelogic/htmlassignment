@@ -141,18 +141,41 @@ background-image: url("banner-img.png");
 
 .grid-container .grid-item:nth-child(1){
     background-color: #a2c73c;
+    position: relative;
 }
-.grid-container .grid-item:nth-child(1) .discover{
-position: relative;
-top: 10px;
+.grid-container .grid-item:nth-child(1) ::after{
+    content: "";
+    position: absolute;
+    left: 100%;
+    top:33%;
+    border-left: 38px solid #a2c73c;
+    border-top: 45px solid transparent;
+    border-bottom:45px solid transparent;
+    z-index: 100;
+
 }
+.grid-container .grid-item:nth-child(3) ::after{
+    
+    
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 33%;
+    border-top: 38px solid #075daa;
+    border-right: 45px solid transparent;
+    border-left: 45px solid transparent;
+    z-index: 100;
+
+}
+
 .grid-container .grid-item:nth-child(2){
     background-image: url(Amanora_JOD_projects_Neo.jpg);
+
 }
 
 .grid-container .grid-item:nth-child(3){
     background-color: #075daa;
-
+    position: relative;
 }
 
 .grid-container .grid-item:nth-child(3) .discover{
@@ -180,7 +203,23 @@ top: 10px;
 }
 .grid-container .grid-item:nth-child(7){
     background-color: #4494d1;
+    position: relative;
 }
+.grid-container .grid-item:nth-child(7) ::after{
+    content: "";
+    position: absolute;
+    bottom:100%;
+    left:33%;
+    z-index: 50;
+    border-bottom: 38px solid #4494d1 ;
+    border-left: 45px solid transparent;
+    border-right:45px solid transparent;
+    z-index: 100;
+
+}
+
+
+
 .grid-container .grid-item:nth-child(7) .discover{
 position: relative;
     top: 110px;
@@ -191,11 +230,22 @@ position: relative;
 }
 .grid-container .grid-item:nth-child(9){
     background-color: #0eb049;
+    position: relative;
 }
-.grid-container .grid-item:nth-child(9) .discover{
- position: relative;
-    top: 20px;
+
+.grid-container .grid-item:nth-child(9) ::after{
+    content: "";
+    position: absolute;
+    right:100%;
+    bottom: 33%;
+    z-index: 50;
+    border-right:38px solid #0eb049 ;
+    border-top: 45px solid transparent;
+    border-bottom:45px solid transparent;
+    
+
 }
+
 
 .gridhead{
     font-size: 
@@ -215,6 +265,11 @@ position: relative;
 
     font-weight: bold;
     
+}
+
+#1{
+    background-color: black;
+    z-index: 200;
 }
 
 
