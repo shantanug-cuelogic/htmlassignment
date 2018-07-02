@@ -12,6 +12,7 @@ body{
 }
 
 .container{
+    display: block;
     width: 1170px;
     height: auto;
     margin: 0 auto;
@@ -89,7 +90,7 @@ header, footer, section {
 }
 
 .banner {
-background-image: url("banner-img.png");
+background-image: url("./assets/banner-img.png");
     height: 700px;
     width: 100%;
     background-size: cover;
@@ -137,18 +138,35 @@ background-image: url("banner-img.png");
   grid-template-columns: auto auto auto;
     margin-top: 110px;
 
+
 }
 .grid-item {
   border: ;
     text-align: center;
  width: 265px;
  height: 265px; 
+    display: block;
+    
 }
 
+.grid-item:nth-child(1) *{
+    margin-bottom: -5
+    
+}
+.grid-item:nth-child(9) *{
+    margin-bottom: -1
+    
+}
+.discover{
+    position:;
+
+}
 .grid-container .grid-item:nth-child(1){
     background-color: #a2c73c;
     position: relative;
+
 }
+
 .grid-container .grid-item:nth-child(1) ::after{
     content: "";
     position: absolute;
@@ -172,17 +190,25 @@ background-image: url("banner-img.png");
     border-left: 45px solid transparent;
     z-index: 100;
 
+
 }
 
 .grid-container .grid-item:nth-child(2){
-    background-image: url(Amanora_JOD_projects_Neo.jpg);
+    background-image: url(./assets/Amanora_JOD_projects_Neo.jpg);
 
 }
 
 .grid-container .grid-item:nth-child(3){
     background-color: #075daa;
     position: relative;
+    
 }
+
+#thirdp{
+color: #BABABA;
+    
+}
+
 
 .grid-container .grid-item:nth-child(3) .discover{
     position: relative;
@@ -190,22 +216,28 @@ background-image: url("banner-img.png");
 
 }
 .grid-container .grid-item:nth-child(4){
-    background-image: url(Amanora_JOD_projects_Adreno.jpg);
+    background-image: url(./assets/Amanora_JOD_projects_Adreno.jpg);
 }
 .grid-container .grid-item:nth-child(5) img {
     position: relative;
-    top: 70px;
+    top: 60px;
 }
 .grid-container .grid-item:nth-child(5) p{
+    font-style: italic;
     position: relative;
-    top: 70px;
+    top: 60px;
     font-weight: bold;
+    padding-left: 35px;
+    padding-right: 35px;
 }
-
+#quotefont{
+    color: #6a6d72;
+    
+}
 
 
 .grid-container .grid-item:nth-child(6){
-    background-image: url(Amanora_JOD_projects_gateway.jpg);
+    background-image: url(./assets/Amanora_JOD_projects_gateway.jpg);
 }
 .grid-container .grid-item:nth-child(7){
     background-color: #4494d1;
@@ -232,7 +264,7 @@ position: relative;
 }
 
 .grid-container .grid-item:nth-child(8){
-    background-image: url(NEO-Gallery-Image-3-new.jpg);
+    background-image: url(./assets/NEO-Gallery-Image-3-new.jpg);
 }
 .grid-container .grid-item:nth-child(9){
     background-color: #0eb049;
@@ -254,23 +286,27 @@ position: relative;
 
 
 .gridhead{
-    font-size: 
 }
 .gridp1{
     color: #444547;
     font-weight: bold;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 .gridp2{
     color: white;
     font-weight: bold;
+        padding-right: 30px;
+    padding-left: 30px;
 }
 .gridp3{
     font-weight: 300;
+        padding-right: 30px;
+    padding-left: 30px;
 }
 .discover{
 
     font-weight: bold;
-    
 }
 
 #1{
@@ -278,6 +314,10 @@ position: relative;
     z-index: 200;
 }
 
+.discover a{
+  text-decoration: none;
+color: black;
+}
 
 .well
 {
