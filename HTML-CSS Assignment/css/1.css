@@ -1,7 +1,7 @@
 @font-face
 {
 font-family: qs;
-src: url('quicksand.ttf');
+src: url('../font/quicksand.ttf');
 }
 
 
@@ -91,7 +91,7 @@ header, footer, section {
 }
 
 .banner {
-background-image: url("/images/banner-img.png");
+background-image: url("../images/banner-img.png")   ;
     height: 700px;
     width: 100%;
     background-size: cover;
@@ -195,7 +195,7 @@ background-image: url("/images/banner-img.png");
 }
 
 .grid-container .grid-item:nth-child(2){
-    background-image: url(/images/Amanora_JOD_projects_Neo.jpg);
+    background-image: url(../images/Amanora_JOD_projects_Neo.jpg);
 
 }
 
@@ -217,7 +217,7 @@ color: #BABABA;
 
 }
 .grid-container .grid-item:nth-child(4){
-    background-image: url(/images/Amanora_JOD_projects_Adreno.jpg);
+    background-image: url(../images/Amanora_JOD_projects_Adreno.jpg);
 }
 .grid-container .grid-item:nth-child(5) img {
     position: relative;
@@ -238,7 +238,7 @@ color: #BABABA;
 
 
 .grid-container .grid-item:nth-child(6){
-    background-image: url(/images/Amanora_JOD_projects_gateway.jpg);
+    background-image: url(../images/Amanora_JOD_projects_gateway.jpg);
 }
 .grid-container .grid-item:nth-child(7){
     background-color: #4494d1;
@@ -265,7 +265,7 @@ position: relative;
 }
 
 .grid-container .grid-item:nth-child(8){
-    background-image: url(/images/NEO-Gallery-Image-3-new.jpg);
+    background-image: url(../images/NEO-Gallery-Image-3-new.jpg);
 }
 .grid-container .grid-item:nth-child(9){
     background-color: #0eb049;
